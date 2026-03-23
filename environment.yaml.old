@@ -1,0 +1,37 @@
+name: trnascpi
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # 기본 파이썬 및 필수 과학 컴퓨팅 패키지
+  - python=3.8
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - tqdm
+  - h5py
+  - networkx
+  
+  # 화합물 및 단백질 전처리 핵심 패키지
+  - rdkit
+  - biopython
+  
+  # 딥러닝 코어 패키지 (PyTorch)
+  - pytorch
+  
+  - pip
+  - pip:
+    # Transformer 모델 및 학습 관련 핵심 패키지
+    - pytorch-lightning==1.4.9
+    - einops==0.4.1
+    - axial-positional-embedding==0.2.1
+    - local-attention==1.4.3
+    - performer-pytorch==1.1.4
+    - tape-proteins==0.5
+    - gensim==4.1.2
+    - lmdb==1.2.1
+    - tensorboard

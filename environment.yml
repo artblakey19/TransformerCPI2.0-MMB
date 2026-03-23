@@ -1,0 +1,43 @@
+name: transcpi-gpu
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - biopython
+  - rdkit
+  - h5py
+  - tqdm
+  - networkx
+  - requests
+  - jinja2
+  - joblib
+  - statsmodels
+  - sqlalchemy
+  - reportlab
+  - pillow
+  - filelock
+  - fsspec
+  - platformdirs
+  - packaging
+  - setuptools
+  - wheel
+  - pip:
+      - torch
+      - torchvision
+      - torchaudio
+      - tensorboardx
+      - tape-proteins
+      - lmdb
+      - boto3
+      - botocore
+      - s3transfer
+      - urllib3<2

@@ -11,6 +11,7 @@ import random
 import os
 import numpy as np
 from featurizer import featurizer
+from model import Encoder, Decoder, Predictor
 
 class Tester(object):
     def __init__(self, model,device):
@@ -88,7 +89,7 @@ if __name__ == "__main__":
     pretrain.eval()
     encoder = Encoder(pretrain, n_layers=3, device=device)
     decoder = Decoder(n_layers=3, dropout=0.2, device=device)
-    model = Predictor(encoder, decoder, device, status='infer')
+    model = Predictor(encoder, decoder, device)
     model_path = './Virtual_Screening.pt'
     model.load_state_dict(torch.load(model_path).state_dict())
     model.to(device)
