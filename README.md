@@ -193,3 +193,10 @@ conda activate transcpi-gpu
 
 **Original Author:**
 - Lifan Chen (SIMM, Chinese Academy of Sciences)
+## Data Source
+The protein sequence data (`uniprotkb_taxonomy_id_9606_AND_reviewed_2026_03_17.fasta`) provided in this repository is sourced from the UniProt Knowledgebase (UniProtKB).
+
+* **Organism:** Homo sapiens (Human, TaxID: 9606)
+* **Dataset:** Reviewed (Swiss-Prot)
+* **Date Downloaded:** 2026-03-17
+* **License:** This data is distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/).
